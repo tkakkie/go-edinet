@@ -14,12 +14,10 @@ The developer is learning programming, and Go is their first programming languag
 
 ## Review Priorities
 
-* Highest priority: ensure API keys, credentials, tokens, or other secrets are not included in the source code or repository.
-* Check whether authentication and authorization follow the intended design.
-* Check whether tests are sufficient to prevent bugs and regressions.
-* Check for code that works but is poor or unsafe practice.
-* In particular, check for ignored errors, such as discarding `err` without proper handling.
-* Point out issues that may affect reliability, maintainability, or security.
+* **Exposed secrets:** Ensure API keys, tokens, credentials, or other sensitive information are not included in the source code or repository.
+* **Error handling:** Check for ignored errors, such as discarded `err` values, and other unsafe or inappropriate practices.
+* **Tests:** Ensure tests are sufficient to prevent regressions and unintended changes to existing functionality.
+* **Reliability, maintainability, and security:** Identify code that may work now but could cause bugs, vulnerabilities, or maintenance problems later.
 
 ## Review Feedback That Is Not Needed
 
