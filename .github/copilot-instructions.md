@@ -1,28 +1,25 @@
 ## Project Overview
 
-This project is a Go library that uses the EDINET API to retrieve data such as ZIP files and CSV files.
-
-The library should allow users to specify an element ID and retrieve the corresponding value from the EDINET data.
+This project is a Go library that retrieves ZIP and CSV data from the EDINET API and allows users to retrieve values by specifying an element ID.
 
 ## Background
 
-The developer is currently learning programming, and Go is their first programming language.
-
-This project is primarily intended for learning purposes.
+The developer is learning programming, and Go is their first programming language. This project is primarily for learning purposes.
 
 ## Copilot Behavior
 
 * Write all review comments in Japanese.
-* Do not provide direct code fixes or replacement code in review comments.
-* Instead, explain why a change should be made, what the underlying issue is, and what the developer should consider.
+* Do not provide direct code fixes or replacement code.
+* Explain why a change is needed, what the issue is, and what the developer should consider.
 
 ## Review Priorities
 
-Pay particular attention to the following areas:
-
-* Check with the highest priority that sensitive information, such as API keys, credentials, tokens, or other secrets, is not included in the source code or repository.
-* Check whether authentication and authorization are implemented according to the intended design.
-* Check whether sufficient tests are in place to prevent changes from introducing bugs or regressions into existing functionality.
+* Highest priority: ensure API keys, credentials, tokens, or other secrets are not included in the source code or repository.
+* Check whether authentication and authorization follow the intended design.
+* Check whether tests are sufficient to prevent bugs and regressions.
+* Check for code that works but is poor or unsafe practice.
+* In particular, check for ignored errors, such as discarding `err` without proper handling.
+* Point out issues that may affect reliability, maintainability, or security.
 
 ## Review Feedback That Is Not Needed
 
