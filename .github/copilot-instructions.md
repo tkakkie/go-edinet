@@ -1,6 +1,6 @@
 ## Project Overview
 
-This project is a Go library that retrieves ZIP and CSV data from the EDINET API and allows users to retrieve values by specifying an element ID.
+This project is a Go library that uses the EDINET API to retrieve and filter document lists, download documents, parse CSV data, and retrieve values by specifying an element ID.
 
 ## Background
 
@@ -16,8 +16,7 @@ The developer is learning programming, and Go is their first programming languag
 
 * **Exposed secrets:** Ensure API keys, tokens, credentials, or other sensitive information are not included in the source code or repository.
 * **Error handling:** Check for ignored errors, such as discarded `err` values, and other unsafe or inappropriate practices.
-* **Tests:** Ensure tests are sufficient to prevent regressions and unintended changes to existing functionality.
-* **Reliability, maintainability, and security:** Identify code that may work now but could cause bugs, vulnerabilities, or maintenance problems later.
+* **Tests:** Verify that added or changed functionality has tests for successful cases and expected failure cases such as API errors, invalid responses, invalid CSV data, and missing element IDs. Unit tests must not access the real EDINET API or network, must run without an API key, and must produce repeatable results using test HTTP servers or fixed test data. All existing tests must also pass.
 
 ## Review Feedback That Is Not Needed
 
