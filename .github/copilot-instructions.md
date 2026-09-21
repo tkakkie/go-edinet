@@ -1,8 +1,8 @@
 ## Project Overview
 
-This project is a Go library that uses the EDINET API to retrieve data such as ZIP files and CSV files, extract financial information such as revenue, and make those values easily accessible to users through the library.
+This project is a Go library that uses the EDINET API to retrieve data such as ZIP files and CSV files.
 
-The goal is for users of this library to be able to retrieve financial figures such as revenue through the EDINET API without having to handle the raw data processing themselves.
+The library should allow users to specify an element ID and retrieve the corresponding value from the EDINET data.
 
 ## Background
 
@@ -20,12 +20,10 @@ This project is primarily intended for learning purposes.
 
 Pay particular attention to the following areas:
 
-* Security and vulnerability prevention.
 * Check with the highest priority that sensitive information, such as API keys, credentials, tokens, or other secrets, is not included in the source code or repository.
-* Verify that the code has sufficient and appropriate tests.
-* Point out issues that may cause security, reliability, or maintainability problems.
+* Check whether authentication and authorization are implemented according to the intended design.
+* Check whether sufficient tests are in place to prevent changes from introducing bugs or regressions into existing functionality.
 
 ## Review Feedback That Is Not Needed
 
 * Do not comment on formatting issues such as indentation or whitespace.
-* Leave formatting concerns to `gofmt`.
